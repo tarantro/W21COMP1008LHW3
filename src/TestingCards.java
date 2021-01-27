@@ -22,5 +22,16 @@ public class TestingCards {
 
         System.out.println(card1);
 
+        System.out.println("Creating a deck of cards");
+        DeckOfCards deck1 = new DeckOfCards();
+        System.out.println(deck1);
+
+        //shuffle deck
+        deck1.shuffle();
+        //deal out the first 5 cards
+        for (int i = 1; i < 5; i++)
+        {
+            System.out.printf("Card: %d : %s",i,deck1.dealTopCard());
+        }
     }
 }
