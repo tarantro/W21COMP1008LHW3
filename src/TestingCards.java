@@ -17,6 +17,10 @@ public class TestingCards {
 
         myHand.addAll(Arrays.asList(card3, card4, card5));
 
-    }
+        myHand.remove(0);
+        System.out.println(myHand);
 
+        System.out.println(card1);
+
+    }
 }
